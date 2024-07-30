@@ -1,419 +1,184 @@
 * {
-	padding: 0;
-	margin: 0;
-	list-style: none;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
 }
 
 @font-face {
-	font-family: HATTEN;
-	font-style: normal;
-	font-weight: 100;
-	src: url(../font/HATTEN.TTF);
+  font-family: HATTEN;
+  font-style: normal;
+  font-weight: 100;
+  src: url(../font/HATTEN.TTF);
 }
 
 body {
-	background: #fff no-repeat;
-}
-.talleres_container nav{
-	border: 2px solid green;
+  background: #fff no-repeat;
 }
 
+/* Seccion de barra de navegacion */
 .talleres_container {
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-	padding: 5px 10px;
-	background: #F23535;
-	height: 120px;
-	width: 100%;
-	display: flex;
+  width: 100%;
+  padding: 5px 5px 0 5px;
 
-	& .talleres_container_logo {
-		position: relative;
-		width: 180px;
-		height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 
-		& .talleres_logo {
-			position: relative;
-			display: block;
-			top: 8px;
+  background-color: red;
 
-			& .logo {
-				border: 2px solid red;
-				width: 100%;
-				height: 120px;
-				border-radius: 400px;
-			}
-			& .checkbtn {
-				font-size: 2rem;
-				color: #000;
-				float: right;
-				line-height: 80px;
-				margin-right: 50px;
-				cursor: pointer;
-				display: none;
-				transition: .3s;
-				transform: scale(1.1)
-			}
-			& .checkbtn {
-				color: #1F618D;
-				cursor: pointer;
-				font-size: 25px;
-			}
+  position: relative;
 
-			& .checkbtn:hover {
-				transition: .3s;
-				transform: scale(1.1);
-				}
-			}
-		}
-	}
+  & .talleres_container_all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 
-	& .talleres_nav_list_conatiner {
-		display: flex;
-		flex-direction: column;
+    & .talleres_container_logo {
+      & .talleres_logo {
+        border-radius: 50%;
 
-		& .talleres_title {
-			color: #000;
-			font-family: HATTEN;
-			text-align: center;
-			letter-spacing: 3px;
-			font-size: 40px;
-			border: 2px solid yellow;
-		}
+        & .talleres_logo_image {
+          width: 70px;
+          border-radius: 50%;
+          border: 2px solid black;
+        }
+      }
+    }
 
-		& .talleres_list_container {
-			display: flex;
-			gap: 10px;
+    & .talleres_nav_list_conatiner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
-			& .talleres_list_item {
-				& .talleres_list_links {
-					text-decoration: none;
-					color: white;
-				}
+      & .talleres_title {
+        width: 100%;
+        font-size: 13px;
+        text-align: center;
+        font-weight: bold;
+      }
 
-				& .talleres_list_links:hover {
-					text-decoration: underline;
-					transition: .3s;
-			}
-		}
-	}
+      & .talleres_list_container {
+        display: flex;
+        gap: 10px;
+        display: none;
+
+        & .talleres_list_item {
+          transition: 0.3s;
+
+          & .talleres_list_links {
+            color: black; /* Este cambiara a negro */
+            text-decoration: none;
+            transition: 0.3s;
+
+            &:hover {
+              text-decoration: underline;
+              transition: 0.3s;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & .talleres_nav_bar_button_container {
+    & .talleres_nav_bar_button {
+      font-size: 30px;
+      transition: 0.3s;
+      color: #fff;
+
+      &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+    }
+  }
+
+  & .talleres_nav_bar_container_active {
+    height: 170px !important;
+  }
+
+  & .talleres_nav_bar_container {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 0;
+    transition: 0.3s;
+
+    position: absolute;
+    right: 0px;
+    top: 83px;
+    z-index: 1000;
+
+    background: red;
+
+    & .talleres_second_list_container {
+      width: 200px;
+      height: 150px;
+
+      padding: 0;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      & .talleres_second_list_item {
+        text-align: center;
+        width: 100%;
+        padding: 5px 0;
+
+        & .talleres_second_list_links {
+          text-align: center;
+          color: white;
+          text-decoration: none;
+          transition: 0.3s;
+          width: 100%;
+          font-size: 15px;
+
+          &:hover {
+            text-decoration: underline;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
 }
 
+/* Seccion de carrusel */
 .talleres_carrusel_container {
-	/*border: 1PX SOLID BLUE;*/
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 80px 0;
+  width: 100%;
 
-	& .talleres_carrusel {
-		width: 900px;
-		height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-	}
+  & .talleres_carrusel {
+    width: 100%;
 
-	& .talleres_carrusel_slide{
-		/*display: flex;
-		align-items: center;
-		justify-content: center;*/
-		/*width: 100%;
-		height: 300px;
-        position: absolute;
-        margin: 20px 0;
-        border: 2px solid blue;*/
-        width: 100%;
-        height: 296px;
-        top: 230px;
-        /* position: absolute; */
-        /* margin: 20px 0; */
-        /*border: 2px solid blue;*/
+    & .talleres_carrusel_slide {
+      & .carousel-inner {
+        & .carousel-item {
+          width: 100%;
 
-		& .carousel-inner {
-			width: 80%;
-			padding: 0px;
-			margin: 0;
-
-			& .talleres_carrusel_image {
-				width: 100%;
-                height: 300px;
-                /*position: fixed;
-                left: 150px;
-                position: static;*/
-			}
-		}
-
-		& .carousel-item{
-			/*top: 70px;*/
-			padding: 0px;
-			margin: 0;
-		}
-	}
-}
-.contacto {
-	color: #000;
-	background: linear-gradient(150deg, #F23535, #403E3F);
-	height: 30%;
-	text-align: center;
-}
-iframe {
-	width: 100%;
-}
-
-#check {
-	display: none;
-}
-
-/* NO usar ID como referencia para eso usar class */
-#what {
-	display: none;
-}
-
-/* NO usar ID como referencia para eso usar class */
-#face {
-	display: none;
-}
-
-footer {
-	display: inherit;
-	/*position: fixed;*/
-	bottom: 0px;
-	background-color: #F23535;
-	color: #fff;
-	width: 100%;
-	font-size: 8px;
-	padding: 10px 0px;
-	text-align: center;
-	z-index: 5;
-
-	& .talleres_container_icons {
-		display: flex;
-		gap: 2rem;
-		align-items: center;
-		justify-content: center;
-	}
-
-	& .talleres_icon {
-		color: #1F618D;
-		cursor: pointer;
-		font-size: 25px;
-	}
-
-	& .talleres_icon:nth-child(2) {
-		color: #239B56;
-		cursor: pointer;
-		font-size: 25px;
-	}
-
-	& .talleres_icon:hover {
-		transition: .3s;
-		transform: scale(1.1);
-	}
-}
-
-.talleres_container_quienes {
-	/*border: 1px solid #000;*/
-	margin: 0px 0;
-
-
-	& .card-img{
-		width: 100%;
-		height: 360px;
-	}
-}
-
-.talleres_container_introduccion{
-	text-align: center;
-	
-
-	& .card-title{
-		font-weight: bold;
-		font-family: monospace;
-		font-size: 35px;
-	}
-}
-
-.Talleres_titulo_producto{
-	text-align: center;
-	font-family: unset;
-	font-weight: bold;
-	margin: 10px;
-}
-
-.imagen_talleres_almacen{
-	position: absolute;
-	margin: 20px;
-	left: 370px;
-}
-
-.titulo_almacen{
-	text-align: center;
-	font-family: unset;
-	font-weight: bold;
-	margin: 10px;
-}
-
-@media (max-width: 952px) {
-	.talleres_logo{
-
-	}
-
-	nav ul li a {
-		font-size: 12px;
-		flex-direction: column;
-	}
-
-	.talleres_title{
-		font-size: 27px;
-	}
-	.talleres_carrusel_image {
-       
-	}
-	.talleres_container{
-	
+          & .talleres_carrusel_image {
+            width: 100%;
+            height: 180px;
+          }
+        }
+      }
     }
+  }
 }
 
-@media (max-width: 800px) {
-	}
-
-	.talleres_nav_list_conatiner ul {
-		position: fixed;
-		width: 100%;
-		height: 100vh;
-		background: #188e8d;
-		top: 80px;
-		left: -100%;
-		text-align: center;
-		transition: all .5s;
-	}
-
-	.talleres_nav_list_conatiner nav ul li {
-		display: block;
-		margin: 50px 0;
-		line-height: 30px;
-	}
-
-	.talleres_nav_list_conatiner nav ul li a {
-		font-size: 20px;
-	}
-
-	.talleres_nav_list_conatiner li a:hover, li a.talleres_list_item{
-		background: none;
-		color: #000;
-	}
-
-    #check:checked ~ ul{
-       	left:0;
-	}
-	.talleres_carrusel_image {
-		position: relative;
-        width: 600px;
-        height: 230px;
-        margin: 0px;
-    }
-    .talleres_logo {
-        position: absolute;
-       
-    }
-}
-
-@media (max-width: 600px){
-	
-}
-
-
-@media (min-width: 1072px){
-	.talleres_container{
-		/*flex-direction: row;
-    	align-items: center;
-    	justify-content: space-between;
-    	padding: 5px 10px;
-    	background: #F23535;
-    	height: 150px;
-    	width: 100%;
-    	display: flex;*/
-    	margin: 0px;
-        padding: 0;
-        /*border: 2px solid red;*/
-        /* position: absolute; */
-        width: 100%;
-	}
-}
-@media (min-width: 300px){
-	.talleres_carrusel_image {
-        margin: 0px;
-        padding: 0;
-        /*border: 2px solid red;*/
-        position: static;
-    }
-	.logo {
-        /*border: 2px solid red;*/
-        width: 150px;
-        height: 172px;
-        border-radius: 500px;
-    }
-    .talleres_logo {
-        
-    }
-
-    .talleres_container_logo {
-        position: relative;
-        /* width: 180px; */
-        height: 200px;
-    }
-    .talleres_container{
-    	width: 100%;
-    	height: 160px;
-    	border: 2px solid black;
-
-    	& .talleres_title {
-    	font-size: 30px;
-    	display: block;
-    	}
-    }
-    .talleres_carrusel_container{
-    	& .talleres_carrusel{
-    		/*width: 100%;
-    		display: flex;
-    		height: 300px;
-    		align-items: center;
-    		justify-content: center;
-    		border: 3px solid purple;*/
-    		width: 100%;
-            /* display: flex; */
-            height: 300px;
-            position: relative;
-            top: 50px;
-            align-items: center;
-            justify-content: center;
-            /*border: 3px solid purple;*/
-
-    		& .carousel-inner{
-    			/*padding: 0;
-    			margin: 0;
-    			height: 200px;
-    			position: initial;
-    			border: 2px green;*/
-    			/*border: 2px solid yellow;*/
-            	width: 100%;
-            	height: 100%;
-            	position: absolute;
-    		
-    	& .carousel-item{
-    		/*border: 2px solid yellow;*/
-    		width: 100%;
-    		height: 100%;
-
-    		& .talleres_container_icons{
-        		
-        		gap: 2rem;
-        		align-items: center;
-        		justify-content: center;
-    			}
-    			}
-    		}
-    	}
-    }
+/* Este se borrara */
+section .talleres_map {
+  border: 1px solid red !important;
+  display: none;
 }
