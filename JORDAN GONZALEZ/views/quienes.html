@@ -1,69 +1,116 @@
 <!DOCTYPE html>
 <html lang="es">
+	
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
-	<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>TALLERES INDUSTRIALES GONZALEZ CHAVARRO</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="icon" href="../img/logotalleresindriales.jpg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
 
-	<title>QUIENES SOMOS</title>
-	<link rel="stylesheet" type="text/css" href="../css/style.css" />
-	<link rel="icon" href="../img/logotalleresindriales.jpg" type="image/x-icon">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-</head>
+  <body>
+    <nav class="talleres_container">
+      <div class="talleres_container_all">
+        <h1 class="talleres_container_logo">
+          <a href="../index.html" class="talleres_logo">
+            <img
+              src="../img/logotalleresindriales.jpg"
+              alt="Talleres Industriales"
+              class="talleres_logo_image"
+            />
+          </a>
+        </h1>
 
-<body>
-	<nav class="talleres_container">
-		<h1 class="talleres_container_logo">
-			<a href="#" class="talleres_logo">
-				<img src="../img/logotalleresindriales.jpg" alt="Talleres Industriales" class="logo">
-			</a>
-		</h1>
+        <div class="talleres_nav_list_conatiner">
+          <h2 class="talleres_title">
+            TALLERES INDUSTRIALES GONZALEZ CHAVARRO
+          </h2>
 
-		<div class="talleres_nav_list_conatiner">
-			<h2 class="talleres_title">TALLERES INDUSTRIALES GONZALEZ CHAVARRO</h2>
+          <ul class="talleres_list_container">
+            <li class="talleres_list_item">
+              <a class="talleres_list_links" href="../index.html">INICIO</a>
+            </li>
 
-			<ul class="talleres_list_container">
-				<li class="talleres_list_item">
-					<a class="talleres_list_links" href="../index.html">INICIO</a>
-				</li>
+            <li class="talleres_list_item">
+              <a class="talleres_list_links" href=""
+                >QUIENES SOMOS</a
+              >
+            </li>
 
-				<li class="talleres_list_item">
-					<a class="talleres_list_links" href="">QUIENES SOMOS</a>
-				</li>
+            <li class="talleres_list_item">
+              <a class="talleres_list_links" href="../views/productos.html"
+                >SERVICIO</a
+              >
+            </li>
 
-				<li class="talleres_list_item">
-					<a class="talleres_list_links" href="../views/productos.html">PRODUCTO/SERVICIO</a>
-				</li>
+            <li class="talleres_list_item">
+              <a class="talleres_list_links" href="../views/almacen.html"
+                >ALMACEN</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
 
-				<li class="talleres_list_item">
-					<a class="talleres_list_links" href="../views/almacen.htm">ALMACEN</a>
-				</li>
-			</ul>
-		</div>
+      <div class="talleres_nav_bar_button_container">
+        <i
+          class="fas fa-bars talleres_nav_bar_button"
+          id="hamburguerButton"
+        ></i>
+      </div>
 
-		<div class="talleres_container_icons">
-			<input type="submit" id="what" class="botoon">
-			<label form="what" class="whatbtn talleres_icon">
-				<i class="fa-brands fa-square-whatsapp"></i>
-			</label>
+      <div class="talleres_nav_bar_container" id="navBarMovile">
+        <ul class="talleres_second_list_container">
+          <li class="talleres_second_list_item">
+            <a class="talleres_second_list_links" href="../index.html">INICIO</a>
+          </li>
 
-			<input type="facebook" id="face">
-			<label form="face" class="facebtn talleres_icon">
-				<i class="fa-brands fa-facebook"></i>
-			</label>
+          <li class="talleres_second_list_item">
+            <a class="talleres_second_list_links" href=""
+              >QUIENES SOMOS</a
+            >
+          </li>
 
-			<input type="checkbox" id="check">
-			<label form="check" class="checkbtn">
-				<i class="fas fa-bars"></i>
-			</label>
-		</div>
-	</nav>
+          <li class="talleres_second_list_item">
+            <a class="talleres_second_list_links" href="../views/productos.html"
+              >SERVICIO</a
+            >
+          </li>
+
+          <li class="talleres_second_list_item">
+            <a class="talleres_second_list_links" href="../views/almacen.html"
+              >ALMACEN</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
 
 	<section>
 		<div class="talleres_container_quienes">
@@ -76,14 +123,28 @@
     <div class="talleres_container_introduccion">
     	<h5 class="card-title">SOBRE TALLERES INDUSTRIALES GONZALEZ CHAVARRO</h5>
     	<!--<p  class="card-text">Productos inteligentes a precios accesibles</p><br>-->
-			<h6>Desde nuestro primer día de operaciones, ShopMaps le ha ofrecido al público la más amplia selección de productos a precios incomparables. Nuestra tienda virtual es sinónimo de calidad, por lo que te garantizamos contar con la mayor variedad de mercancía así como de productos temporales o de edición limitada que se adaptan a cualquier presupuesto.<br>Echa un vistazo y empieza adquirir nuestros servicios</h6>
+		<br>
+			<h6>Desde nuestro primer día de operaciones, ShopMaps le ha ofrecido al público la más amplia selección de productos a precios incomparables. Nuestra tienda virtual es sinónimo de calidad, por lo que te garantizamos contar con la mayor variedad de mercancía así como de productos temporales o de edición limitada que se adaptan a cualquier presupuesto.<br><br>Echa un vistazo y empieza adquirir nuestros servicios.</h6>
 		</div>
 		</div>
 		</div>
 	</section>
-	<br><br>
+
 	<footer>
+		<div class="talleres_container_icons">
+		  <input type="submit" id="what" class="botoon" />
+		  <label form="what" class="whatbtn talleres_icon">
+			<i class="fa-brands fa-square-whatsapp"></i>
+		  </label>
+  
+		  <input type="facebook" id="face" />
+		  <label form="face" class="facebtn talleres_icon">
+			<i class="fa-brands fa-facebook"></i>
+		  </label>
+		</div>
 		2024 &copy; TALLERES INDUSTRIALES GONZALEZ CHAVARRO
-	</footer>
+	  </footer>
+  
+	  <script src="../js/main.js"></script>
 </body>
 </html>
