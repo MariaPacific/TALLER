@@ -177,99 +177,105 @@ body {
   }
 }
 
-  /* Seccion de contacto */
-  .talleres_contacto {
-    color: #000;
-	  background: red;
-    /*background: linear-gradient(150deg, red, #403E3F);*/
-	  height: 30%;
-    width: 100%;
-	  text-align: center;
-  }
+/* Seccion de contacto */
+.talleres_contacto {
+  color: #000;
+  background: red;
+  /*background: linear-gradient(150deg, red, #403E3F);*/
+  height: 30%;
+  width: 100%;
+  text-align: center;
+}
 
-  .talleres_contacto h2{
-    font-size: 20px;
-  }
+.talleres_contacto h2 {
+  font-size: 20px;
+}
 
-  .talleres_contacto p{
-      margin-bottom: 0;
-      font-size: 13px;
-  }  
+.talleres_contacto p {
+  margin-bottom: 0;
+  font-size: 13px;
+}
 
 /*Seccion del footer*/
-footer{
+.talleres_footer {
   display: inherit;
-	bottom: 0px;
-	background-color: red;
-	color: #000;
-	width: 100%;
-	font-size: 8px;
-	padding: 10px 0px;
-	text-align: center;
-	z-index: 5;
+  bottom: 0px;
+  background-color: red;
+  color: #000;
+  width: 100%;
+  font-size: 8px;
+  padding: 10px 0px;
+  text-align: center;
+  z-index: 5;
   font-weight: bold;
 
   & .talleres_container_icons {
-		display: flex;
-		gap: 2rem;
-		align-items: center;
-		justify-content: center;
-	}
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
 
-	  & .talleres_icon {
-		  color: #1F618D;
-		  cursor: pointer;
-		  font-size: 25px;
-	  }
+  & .talleres_icon {
+    color: #1f618d;
+    cursor: pointer;
+    font-size: 25px;
+  }
 
-	    & .talleres_icon:nth-child(2) {
-		    color: #239B56;
-		    cursor: pointer;
-		    font-size: 25px;
-	    }
+  & .talleres_icon:nth-child(2) {
+    color: #239b56;
+    cursor: pointer;
+    font-size: 25px;
+  }
 
-	      & .talleres_icon:hover {
-		      transition: .3s;
-		      transform: scale(1.1);
-	      }
-     #what {
-      display: none;
-    }
-  
-      /* NO usar ID como referencia para eso usar class */
-    #face {
-      display: none;
+  & .talleres_icon:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+  }
+  #what {
+    display: none;
+  }
+
+  /* NO usar ID como referencia para eso usar class */
+  #face {
+    display: none;
   }
 }
 
 /* Seccion de Quienes somos*/
-.talleres_container_introduccion{
+.talleres_container_introduccion {
   width: 100%;
+  border: 3px solid black;
+
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  gap: 10px;
+
   & .card-title {
     font-size: 20px;
     text-align: center;
     font-weight: bold;
   }
 }
-.talleres_container_introduccion h6{
+.talleres_container_introduccion h6 {
   font-size: 15px;
-  text-align: justify ;
+  text-align: justify;
 }
 
 /*Seccion de servicios*/
-.talleres_titulo_producto h1{
+.talleres_titulo_producto h1 {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
   margin: 12px 0px;
 }
 
-.talleres_titulo_producto h3{
+.talleres_titulo_producto h3 {
   font-size: 15px;
   text-align: center;
 }
 .img_before {
-
   & .slim-before-caption {
     display: flex;
     align-items: center;
@@ -280,10 +286,9 @@ footer{
     color: #000;
   }
 }
-.before_after_slider{
-  & .img_after{
-
-    & .slim-after-caption{
+.before_after_slider {
+  & .img_after {
+    & .slim-after-caption {
       display: flex;
       align-items: center;
       justify-content: right;
@@ -294,144 +299,144 @@ footer{
 }
 
 /*Seccion de Tablet*/
-@media (min-width: 600px){
-.talleres_container{
-  padding: 5px 10px 0px 10px;
-  gap: 1rem;
-& .talleres_container_all{
+@media (min-width: 600px) {
+  .talleres_container {
+    padding: 5px 10px 0px 10px;
     gap: 1rem;
-& .talleres_container_logo {
+    & .talleres_container_all {
+      gap: 1rem;
+      & .talleres_container_logo {
         & .talleres_logo {
-            & .talleres_logo_image {
-                width: 90px;
-                border-radius: 50%;
-                border: 2px solid black;
-              }
-            }
+          & .talleres_logo_image {
+            width: 90px;
+            border-radius: 50%;
+            border: 2px solid black;
           }
-  & .talleres_nav_list_conatiner {
-    & .talleres_title{
-      font-size: 20px;
+        }
+      }
+      & .talleres_nav_list_conatiner {
+        & .talleres_title {
+          font-size: 20px;
         }
       }
     }
   }
-.card{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 20rem;
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
   }
 }
 /*Seccion de Ordenador*/
 
-@media (min-width: 1024px){
-  .talleres_container{
+@media (min-width: 1024px) {
+  .talleres_container {
     padding: 5px 10px 0px 10px;
     gap: 4rem;
-  & .talleres_container_all{
+    & .talleres_container_all {
       gap: 2rem;
-  & .talleres_container_logo {
-          & .talleres_logo {
-              & .talleres_logo_image {
-                  width: 120px;
-                  border-radius: 50%;
-                  border: 2px solid black;
-                }
-              }
-            }
-    & .talleres_nav_list_conatiner {
-      & .talleres_title{
-        font-size: 35px;
+      & .talleres_container_logo {
+        & .talleres_logo {
+          & .talleres_logo_image {
+            width: 120px;
+            border-radius: 50%;
+            border: 2px solid black;
           }
         }
       }
+      & .talleres_nav_list_conatiner {
+        & .talleres_title {
+          font-size: 35px;
+        }
+      }
     }
-& .talleres_carrusel_container {
-  & .talleres_carrusel {
-    & .talleres_carrusel_slide {
-      & .carousel-inner {
-        & .carousel-item {
-          & .talleres_carrusel_image {
+  }
+  & .talleres_carrusel_container {
+    & .talleres_carrusel {
+      & .talleres_carrusel_slide {
+        & .carousel-inner {
+          & .carousel-item {
+            & .talleres_carrusel_image {
               width: 100%;
               height: 300px;
-              }
             }
           }
         }
       }
     }
-/*Seccion de contacto*/
+  }
+  /*Seccion de contacto*/
   & .talleres_contacto {
-      color: #000;
-      background: red;
-      /*background: linear-gradient(150deg, red, #403E3F);*/
-      height: 30%;
-      width: 100%;
-      text-align: center;
+    color: #000;
+    background: red;
+    /*background: linear-gradient(150deg, red, #403E3F);*/
+    height: 30%;
+    width: 100%;
+    text-align: center;
+  }
+  & .talleres_contacto h2 {
+    font-size: 40px;
+  }
+
+  & .talleres_contacto p {
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+  /*Seccion de footer*/
+  & .talleres_footer {
+    display: inherit;
+    bottom: 0px;
+    background-color: red;
+    color: #000;
+    width: 100%;
+    font-size: 12px;
+    padding: 10px 0px;
+    text-align: center;
+    z-index: 5;
+    font-weight: bold;
+
+    & .talleres_container_icons {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
     }
-  & .talleres_contacto h2{
-      font-size: 40px;
+
+    & .talleres_icon {
+      color: #1f618d;
+      cursor: pointer;
+      font-size: 30px;
     }
-  
-   & .talleres_contacto p{
-      margin-bottom: 0;
-      font-size: 20px;
-    } 
-/*Seccion de footer*/
-    & footer{
-      display: inherit;
-      bottom: 0px;
-      background-color: red;
-      color: #000;
-      width: 100%;
-      font-size: 12px;
-      padding: 10px 0px;
-      text-align: center;
-      z-index: 5;
-      font-weight: bold;
-    
-      & .talleres_container_icons {
-        display: flex;
-        gap: 2rem;
-        align-items: center;
-        justify-content: center;
-      }
-    
-        & .talleres_icon {
-          color: #1F618D;
-          cursor: pointer;
-          font-size: 30px;
-        }
-    
-          & .talleres_icon:nth-child(2) {
-            color: #239B56;
-            cursor: pointer;
-            font-size: 30px;
-          }
-    
-            & .talleres_icon:hover {
-              transition: .3s;
-              transform: scale(1.1);
-            }
-          }
-/*Seccion de titulo*/
-& .talleres_titulo_producto h1{
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  margin: 12px 0px;
-}
-          
-& .talleres_titulo_producto h3{
-  font-size: 20px;
-  text-align: center;
-}
-& .before_after_slider {
+
+    & .talleres_icon:nth-child(2) {
+      color: #239b56;
+      cursor: pointer;
+      font-size: 30px;
+    }
+
+    & .talleres_icon:hover {
+      transition: 0.3s;
+      transform: scale(1.1);
+    }
+  }
+  /*Seccion de titulo*/
+  & .talleres_titulo_producto h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 12px 0px;
+  }
+
+  & .talleres_titulo_producto h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+  & .before_after_slider {
     & .img_after {
       margin: 0px -10px;
       height: 210px;
-      
+
       & .slim-after-caption {
         display: flex;
         align-items: center;
@@ -440,19 +445,30 @@ footer{
         font-weight: bold;
       }
     }
-& .img_before {
-  width: 100%;
+    & .img_before {
+      width: 100%;
 
-  & .slim-before-caption {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    margin: 0px 200px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #000;
-     }
+      & .slim-before-caption {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin: 0px 200px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #000;
+      }
     }
   }
 }
 
+/* Esta es la seccion del almacen */
+.almacen_cards_container {
+  width: 100%;
+  padding: 30px;
+  
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  align-items: center;
+  justify-content: center;
+}
