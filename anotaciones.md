@@ -22,4 +22,9 @@ Para comentar y descomentar se utiliza ctl + }
 ### Quienes somos
 - [] Organizar el codigo de quienes somos
 
+
+## Recursos
+
+- Juego de flexbox zombies [https://mastery.games/flexboxzombies/chapter/2/level/12]
+- Posicionamiento de ranas [https://flexboxfroggy.com/#es]
  
